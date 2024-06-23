@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+}
+
+#habit-form {
+    margin-bottom: 20px;
+}
+
+#habit-input {
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.habit {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #76c7c0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.habit button {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.habit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#year {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.month {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.month-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.day.completed {
+    background-color: #76c7c0;
+}
